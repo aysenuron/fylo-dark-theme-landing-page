@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .main-section {
+    @apply max-w-screen-sm px-4 mx-auto bg-main-main relative py-20;
+  }
+  h1 {
+    @apply text-4xl text-center font-Railway;
+  }
+  h2 {
+    @apply text-4xl text-center font-Railway;
+  }
+  p {
+    @apply text-[16px] text-center font-OpenSans;
+  }
+  .p-left {
+    @apply text-[16px] text-left font-OpenSans;
+  }
+  .primary-button {
+    @apply font-Railway text-lg font-bold px-16 py-4 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-cyan-700;
+  }
+  .feature-card {
+    @apply flex flex-col space-y-4 p-8 items-center;
+  }
+  .feature-heading {
+    @apply text-xl font-Railway font-bold text-center;
+  }
+  .feature-icon {
+    @apply w-20;
+  }
+  .testimonial {
+    @apply flex flex-col gap-4 p-6 rounded-lg bg-main-testimonials z-10;
+  }
+  .reviewer {
+    @apply flex gap-4 items-center;
+  }
+  .profile-img {
+    @apply w-10 rounded-full;
+  }
+}

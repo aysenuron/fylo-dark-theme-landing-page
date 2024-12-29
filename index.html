@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Mentor | Fylo landing page with dark theme and features grid">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="./src/output.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <title>Fylo Landing Page</title>
 </head>
-<body>
-  <header>
-    <div class="header-container">
 
-      <div class="header-logo">
+<body class="text-white font-OpenSans bg-main-main">
+
+  <header class="bg-main-intro max-w-screen-sm px-4 py-6">
+    <div id="header-container" class="flex justify-between items-center mx-auto p-2">
+
+      <div class="header-logo w-24">
         <img src="./images/logo.svg" alt="logo">
       </div>
 
-      <div class="header-links">
+      <div class="flex space-x-6">
         <div class="header-link">Features</div>
         <div class="header-link">Team</div>
         <div class="header-link">Sign In</div>
@@ -28,18 +34,18 @@
 
   <main>
 
-    <section class="hero-section">
+    <section class="hero-section max-w-screen-sm px-4 mx-auto bg-main-intro relative py-12 -z-20">
 
-      <img src="./images/bg-curvy-desktop.svg" alt="bg-curvy-desktop">
-      <img src="./images/bg-curvy-mobile.svg" alt="bg-curvy-mobile">
+      <img class="hidden" src="./images/bg-curvy-desktop.svg" alt="bg-curvy-desktop">
+      <img class="absolute bottom-0 right-0 w-full -z-10" src="./images/bg-curvy-mobile.svg" alt="bg-curvy-mobile">
 
-      <div class="hero-container">
+      <div class="hero-container flex flex-col space-y-8 items-center justify-center">
 
-        <div class="hero-image">
+        <div class="hero-image max-w-full">
           <img src="./images/illustration-intro.png" alt="illustration-intro">
         </div>
 
-        <div class="hero-content">
+        <div class="hero-content flex flex-col items-center gap-4">
           <h1>All your files in one secure location, accessible anywhere</h1>
           <p>Fylo stores all your most important files in one secure location.
             Access them wherever you need, share and collaborate with
@@ -51,20 +57,20 @@
 
     </section>
 
-    <section class="features">
+    <section class="main-section">
 
       <div class="features-container">
 
         <div class="first-row">
 
-          <div class="feature-1">
-            <img src="./images/icon-access-anywhere.svg" alt="icon-access-anywhere">
+          <div class="feature-card">
+            <img class="feature-icon" src="./images/icon-access-anywhere.svg" alt="icon-access-anywhere">
             <p class="feature-heading">Access your files, anywhere</p>
             <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
           </div>
 
-          <div class="feature-2">
-            <img src="./images/icon-security.svg" alt="icon-security">
+          <div class="feature-card">
+            <img class="feature-icon" src="./images/icon-security.svg" alt="icon-security">
             <p class="feature-heading">Security you can trust</p>
             <p>2-factor authentication and user-controlled encryption are
               just a couple on the security features we allow to help secure files.</p>
@@ -74,14 +80,14 @@
 
         <div class="second-row">
 
-          <div class="feature-3">
-            <img src="./images/icon-collaboration.svg" alt="icon-collaboration">
+          <div class="feature-card">
+            <img class="feature-icon" src="./images/icon-collaboration.svg" alt="icon-collaboration">
             <p class="feature-heading">Real-time collaboration</p>
             <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
           </div>
 
-          <div class="feature-4">
-            <img src="./images/icon-any-file.svg" alt="icon-any-file">
+          <div class="feature-card">
+            <img class="feature-icon" src="./images/icon-any-file.svg" alt="icon-any-file">
             <p class="feature-heading">Store any type of file</p>
             <p>Whether you're sharing holiday photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
           </div>
@@ -92,22 +98,25 @@
 
     </section>
 
-    <section class="stay-productive">
+    <section class="main-section">
 
-      <div class="stay-productive-container">
+      <div class="stay-productive-container flex flex-col space-y-8">
 
         <div class="image-container">
           <img src="./images/illustration-stay-productive.png" alt="illustration-stay-productive">
         </div>
 
-        <div class="stay-productive-content">
+        <div class="stay-productive-content flex flex-col space-y-8">
           <h2>Stay productive, wherever you are</h2>
-          <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+          <p class="p-left">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.<br><br>
             Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.
           </p>
-          <div class="link-button">
-            <button>See how Fylo works</button>
-            <img src="./images/icon-arrow.svg" alt="icon-arrow">
+          <div class="flex flex-col gap-2 w-fit">
+            <div class="link-button text-xl text-cyan-400 flex gap-2">
+              <button>See how Fylo works</button>
+              <img class="h-8 w-8" src="./images/icon-arrow.svg" alt="icon-arrow">
+            </div>
+            <div class="w-full h-[2px] bg-cyan-400"></div>
           </div>
         </div>
 
@@ -115,41 +124,41 @@
 
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials main-section">
 
-      <div class="testimonials-container">
+      <div class="testimonials-container relative flex flex-col space-y-8">
 
-        <img src="./images/bg-quotes.png" alt="bg-quotes">
+        <img class="absolute z-0" src="./images/bg-quotes.png" alt="bg-quotes">
 
         <div class="testimonial">
-          <p>rylo nas improved our team productivity by an order of magnitude.</p>
+          <p class="p-left">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
           <div class="reviewer">
             <img class="profile-img" src="./images/profile-1.jpg" alt="profile-1">
             <div class="reviewer-name">
-              <p class="name">Satish Patel</p>
-              <p class="occupation">Founder & CEO, Huddle</p>
+              <p class="name p-left font-bold">Satish Patel</p>
+              <p class="occupation p-left">Founder & CEO, Huddle</p>
             </div>
           </div>
         </div>
 
         <div class="testimonial">
-          <p>rylo nas improved our team productivity by an order of magnitude.</p>
+          <p class="p-left">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
           <div class="reviewer">
             <img class="profile-img" src="./images/profile-2.jpg" alt="profile-2">
             <div class="reviewer-name">
-              <p class="name">Satish Patel</p>
-              <p class="occupation">Founder & CEO, Huddle</p>
+              <p class="name p-left font-bold">Bruce McKenzie</p>
+              <p class="occupation p-left">Founder & CEO, Huddle</p>
             </div>
           </div>
         </div>
 
         <div class="testimonial">
-          <p>rylo nas improved our team productivity by an order of magnitude.</p>
+          <p class="p-left">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
           <div class="reviewer">
             <img class="profile-img" src="./images/profile-3.jpg" alt="profile-3">
             <div class="reviewer-name">
-              <p class="name">Satish Patel</p>
-              <p class="occupation">Founder & CEO, Huddle</p>
+              <p class="name p-left font-bold">Iva Boyd</p>
+              <p class="occupation p-left">Founder & CEO, Huddle</p>
             </div>
           </div>
         </div>
@@ -158,18 +167,23 @@
 
     </section>
 
-    <section class="cta">
+    <section class="cta main-section">
 
-      <div class="cta-container">
-        <h2>Get early access today</h2>
-        <p>
-          It only takes a minute to sign up and our tree starter ters extremely generous. If you have any questions, our support team would be happy to help you.
-        </p>
-        <div class="email-form">
-          <form action="">
-            <input type="email">
-            <button class="primary-button">Get started for free</button>
-          </form>
+      <div class="cta-container bg-main-testimonials p-8 rounded-lg">
+
+        <div class="form flex flex-col space-y-8">
+          <h2>Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our tree starter ters extremely generous. If you have any questions, our support team would be happy to help you.
+          </p>
+          <div class="email-form flex flex-col space-y-4">
+              <input class="h-10 rounded-full" type="email">
+              <button class="primary-button">Get started for free</button>
+          </div>
+        </div>
+
+        <div class="success-message">
+
         </div>
       </div>
 
@@ -232,7 +246,7 @@
           <div class="social-link">
             <img src="" alt="">
           </div>
-          
+
         </div>
 
       </div>

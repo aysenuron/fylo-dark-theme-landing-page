@@ -6,8 +6,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      Railway: ["Railway", 'sans-serif'],
-      OpenSans: ["OpenSans", 'sans-serif'],
+      Raleway: ["Raleway", 'sans-serif'],
+      OpenSans: ["Open Sans", 'sans-serif'],
     },
     extend: {
       colors: {

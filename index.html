@@ -8,10 +8,21 @@
   <!-- Tailwind CSS -->
   <link rel="stylesheet" href="./src/output.css">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
   <script src="script.js" defer></script>
+<style>
+  h1, h2, .feature-heading, .primary-button, .header-link {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+  }
+  p, .p-left, .link-btn, .name, .occupation {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  }
+
+</style>
+  
+  
 
   <title>Fylo Landing Page</title>
 </head>
@@ -115,7 +126,7 @@
           </p>
           <div class="flex flex-col gap-2 w-fit">
             <div class="link-button text-xl text-cyan-400 flex gap-2">
-              <button>See how Fylo works</button>
+              <button class="link-btn">See how Fylo works</button>
               <img class="h-8 w-8" src="./images/icon-arrow.svg" alt="icon-arrow">
             </div>
             <div class="w-full h-[2px] bg-cyan-400"></div>

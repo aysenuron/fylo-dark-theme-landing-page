@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,10 +9,10 @@
     @apply max-w-screen-sm px-4 mx-auto bg-main-main relative py-20;
   }
   h1 {
-    @apply text-4xl text-center font-Railway;
+    @apply text-4xl text-center;
   }
   h2 {
-    @apply text-4xl text-center font-Railway;
+    @apply text-4xl text-center;
   }
   p {
     @apply text-[16px] text-center font-OpenSans;
@@ -19,13 +21,13 @@
     @apply text-[16px] text-left font-OpenSans;
   }
   .primary-button {
-    @apply font-Railway text-lg font-bold px-16 py-4 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 active:from-cyan-300 active:to-cyan-500;
+    @apply text-lg font-bold px-16 py-4 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 active:from-cyan-300 active:to-cyan-500;
   }
   .feature-card {
     @apply flex flex-col space-y-4 p-8 items-center;
   }
   .feature-heading {
-    @apply text-xl font-Railway font-bold text-center;
+    @apply text-xl font-Raleway font-bold text-center;
   }
   .feature-icon {
     @apply w-20;

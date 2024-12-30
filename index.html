@@ -11,6 +11,8 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
+  <script src="script.js" defer></script>
+
   <title>Fylo Landing Page</title>
 </head>
 
@@ -50,7 +52,7 @@
           <p>Fylo stores all your most important files in one secure location.
             Access them wherever you need, share and collaborate with
             renes amv and co-workers.</p>
-            <button class="primary-button">Get Started</button>
+            <button class="primary-button z-50">Get Started</button>
         </div>
 
       </div>
@@ -172,18 +174,21 @@
       <div class="cta-container bg-main-testimonials p-8 rounded-lg">
 
         <div class="form flex flex-col space-y-8">
-          <h2>Get early access today</h2>
-          <p>
-            It only takes a minute to sign up and our tree starter ters extremely generous. If you have any questions, our support team would be happy to help you.
-          </p>
+          <div class="cta-text flex-col space-y-8">
+           <h2>Get early access today</h2>
+           <p>
+             It only takes a minute to sign up and our tree starter ters extremely generous. If you have any questions, our support team would be happy to help you.
+           </p>
+          </div>
           <div class="email-form flex flex-col space-y-4">
-              <input class="h-10 rounded-full" type="email">
-              <button class="primary-button">Get started for free</button>
+              <input class="h-10 rounded-full text-black pl-4" type="email">
+              <button id="submit" class="primary-button">Get started for free</button>
           </div>
         </div>
 
-        <div class="success-message">
-
+        <div class="success-message gap-4 hidden">
+          <img class="w-10 h-10" src="./images/check.png" alt="check">
+          <p class="p-left">We have received your info.<br>Please check your email.</p>
         </div>
       </div>
 
@@ -191,60 +196,60 @@
 
   </main>
 
-  <footer>
+  <footer class="main-section">
 
-    <div class="footer-container">
+    <div class="footer-container flex flex-col space-y-12">
 
       <div class="footer-logo">
         <img src="./images/logo.svg" alt="logo">
       </div>
 
-      <div class="footer-content">
+      <div class="footer-content flex-col space-y-12">
 
-        <div class="footer-contact-info">
+        <div class="footer-contact-info flex-col space-y-4">
 
-          <div class="address">
-            <img src="./images/icon-location.svg" alt="icon-location">
-            <p>Lorem ipsum dolor silamer, consecretur</p>
+          <div class="address flex space-x-4 items-center">
+            <img class="h-4 w-4" src="./images/icon-location.svg" alt="icon-location">
+            <p>Lorem ipsum dolor silamer.</p>
           </div>
 
-          <div class="phone">
-            <img src="./images/icon-phone.svg" alt="icon-phone">
+          <div class="phone flex space-x-4 items-center">
+            <img class="h-4 w-4" src="./images/icon-phone.svg" alt="icon-phone">
             <p>+1-543-123-4567</p>
           </div>
 
-          <div class="email">
-            <img src="./images/icon-email.svg" alt="icon-email">
+          <div class="email flex space-x-4 items-center">
+            <img class="h-4 w-4" src="./images/icon-email.svg" alt="icon-email">
             <p>examole@rvo.com</p>
           </div>
 
         </div>
 
-        <div class="footer-links">
-          <p>About</p>
-          <p>Jobs</p>
-          <p>Press</p>
-          <p>Blog</p>
+        <div class="footer-links flex-col space-y-2">
+          <p class="p-left">About</p>
+          <p class="p-left">Jobs</p>
+          <p class="p-left">Press</p>
+          <p class="p-left">Blog</p>
         </div>
 
-        <div class="footer-links">
-          <p>Contact us</p>
-          <p>Terms</p>
-          <p>Privacy</p>
+        <div class="footer-links flex-col space-y-2">
+          <p class="p-left">Contact us</p>
+          <p class="p-left">Terms</p>
+          <p class="p-left">Privacy</p>
         </div>
 
-        <div class="footer-social">
+        <div class="footer-social flex space-x-4">
 
-          <div class="social-link">
-            <img src="" alt="">
+          <div class="social-link border rounded-full border-gray-500 p-2">
+            <img class="w-6 h-6" src="./images/facebook.png" alt="facebook">
           </div>
 
-          <div class="social-link">
-            <img src="" alt="">
+          <div class="social-link border rounded-full border-gray-500 p-2">
+            <img class="w-6 h-6" src="./images/linkedin.png" alt="linkedin">
           </div>
 
-          <div class="social-link">
-            <img src="" alt="">
+          <div class="social-link border rounded-full border-gray-500 p-2">
+            <img class="w-6 h-6" src="./images/youtube.png" alt="youtube">
           </div>
 
         </div>

@@ -19,7 +19,7 @@
     @apply text-[16px] text-left font-OpenSans;
   }
   .primary-button {
-    @apply font-Railway text-lg font-bold px-16 py-4 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-cyan-700;
+    @apply font-Railway text-lg font-bold px-16 py-4 inline-block rounded-full bg-gradient-to-r from-cyan-500 to-cyan-700 hover:from-cyan-700 hover:to-cyan-800 active:from-cyan-300 active:to-cyan-500;
   }
   .feature-card {
     @apply flex flex-col space-y-4 p-8 items-center;
